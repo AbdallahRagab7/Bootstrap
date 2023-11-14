@@ -21,25 +21,22 @@ body {
   color: var(--green-color);
 }
 
-
 .main-btn {
-    background-color: var(--red-color);
-    color: var(--yellow-color);
-    padding: 0.5rem 1rem;
-  }
-  .main-btn:hover {
-    color: var(--yellow-color);
-  }
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+  padding: 0.5rem 1rem;
+}
+.main-btn:hover {
+  color: var(--yellow-color);
+}
 
-  .navbar .search {
-    border-left: 1px solid var(--green-color);
-  }
-  .navbar .search .fa-magnifying-glass{
-    color: var(--green-color);
-    font-size: 1rem;
-  }
-
-
+.navbar .search {
+  border-left: 1px solid var(--green-color);
+}
+.navbar .search .fa-magnifying-glass {
+  color: var(--green-color);
+  font-size: 1rem;
+}
 
 /* styling hamburger-btn */
 .navbar .navbar-toggler {
@@ -64,4 +61,41 @@ body {
 }
 /* end styling hamburger-btn */
 
+.landing {
+  background-color: var(--dark-color);
+  min-height: calc(100vh - 54px);
+}
 
+.main-title::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background-color: var(--green-color);
+}
+
+/* .test dh e3btro h2 mdeh position relative
+  .test::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    top: 100%;
+    left: 1%;
+    background-color: var(--green-color);
+  }  */
+
+/* styling features */
+
+#features-box {
+  margin-top: 5rem;
+}
+.features .icon-holder .icon {
+  color: var(--green-color);
+}
+.features .feat h4 {
+  color: var(--yellow-color);
+}
