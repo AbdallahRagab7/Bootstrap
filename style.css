@@ -170,7 +170,30 @@ body {
   background-color: var(--green-color);
 }
 /* End Team */
+
 /* Start Project */
 .project {
   background-color: var(--dark-color);
 }
+/* end project */
+
+
+/* Start Subscribe */
+.subscribe {
+  background-color: var(--yellow-color);
+}
+.subscribe input[type="text"] {
+  border: none;
+  border-bottom: 1px solid white;
+}
+.subscribe input[type="text"]:focus {
+  outline: none;
+}
+.subscribe ::placeholder {
+  color: white;
+}
+.subscribe input[type="submit"] {
+  background-color: var(--dark-color);
+  color: var(--yellow-color);
+}
+/* End Subscribe */
