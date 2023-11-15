@@ -88,8 +88,9 @@ body {
     background-color: var(--green-color);
   }  */
 
-/* styling features */
 
+
+/* styling features */
 #features-box {
   margin-top: 5rem;
 }
@@ -99,3 +100,52 @@ body {
 .features .feat h4 {
   color: var(--yellow-color);
 }
+/*end styling features */
+
+
+/* start work styling  */
+.our-work {
+  background-color: var(--section-color);
+}
+.our-work ul .active {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+}
+.our-work ul li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.our-work ul li:not(.active):hover {
+  color: var(--red-color);
+}
+
+.our-work .box {
+  padding:5px;
+  overflow: hidden;
+  position: relative;
+  background-color: red;
+}
+
+.our-work .box::before {
+  content: attr(data-work);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 10px); /*34an mdy padding 5px ymen w 5px shmal */
+  height: calc(100% - 10px);
+  background-color: rgb(51 209 204 / 76%);
+  transform: translateX(calc(-100% - 5px));
+  transition: .5s;
+  font-weight: bold;
+  color: white;
+  font-size: 1.5rem;
+
+}
+.our-work .box:hover::before {
+  transform: translateX(0);
+
+}
+
+
+/* end work styling  */
